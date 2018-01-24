@@ -36,4 +36,4 @@ user programs.
                           
 在 `transform._flush()` 实现里，`readable.push()`方法会在适当的时候调用0次或者多次。`callback`在刷新操作完成的时候一定会被调用。
 
-`transform._flush()` 方法前缀为下划线，因为它是在定义它的类的内部，不应该直接调用用户程序。
+`transform._flush()` 方法前缀为下划线，因为它是在定义它的类的内部，绝不应该被用户程序直接调用。
